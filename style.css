@@ -22,23 +22,15 @@ html {
   text-align: center;
   padding: 20px;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
-
-/* .header-secondary {
-    height: 10vh;
-    background: url('./images/Rectangle 3 (1).png') ;
-    position: absolute;
-    border: 1px solid red;
-    z-index: -1;
-    width: 100%;
-    top: 0;
-    left: 0;
-  } */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -46,11 +38,14 @@ html {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+  flex: 1;
 }
 
 .navbar .menu {
   display: flex;
   gap: 20px;
+  flex: 2; /* Allow menu items to take up more space */
+  justify-content: center; /* Center items on larger screens */
 }
 
 .navbar .menu a {
@@ -63,6 +58,8 @@ html {
 .navbar .icons {
   display: flex;
   gap: 15px;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .navbar .icons span img {
@@ -93,11 +90,12 @@ html {
   margin-bottom: 40px;
 }
 
-.button {
+.content .button {
   background-color: #00a651;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
+  margin-top: 50px;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
@@ -162,8 +160,10 @@ html {
   color: #555;
 }
 
+/* Experience section */
+
 .experience-section {
-  height: 700px;
+  height: auto;
   background-color: #0058530d;
   display: flex;
   flex-direction: column;
@@ -171,6 +171,7 @@ html {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  overflow: hidden;
 }
 
 .experience-background {
@@ -178,8 +179,12 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 }
 
 .experience-content {
@@ -187,6 +192,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 
 .experience-section h2 {
@@ -209,6 +215,7 @@ html {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 90px;
+  justify-content: center;
 }
 
 .experience-card {
@@ -218,6 +225,7 @@ html {
   width: 200px;
   text-align: center;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .experience-card img {
@@ -240,6 +248,7 @@ html {
   margin: 5px 0 0 0;
 }
 
+/* Experience section ends */
 /* POPULAR SECTION */
 
 .destination {
@@ -326,7 +335,6 @@ h2 {
 }
 
 /* POPULAr SECTION ENDS */
-
 .packages-section {
   padding: 40px 20px;
   text-align: center;
@@ -355,6 +363,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hot-deal-card {
@@ -362,7 +372,8 @@ h2 {
   border-radius: 8px;
   overflow: hidden;
   width: 30%;
-  max-height: 370px;
+  min-height: 370px;
+  margin-bottom: 20px;
 }
 
 .hot-deal-card img {
@@ -427,6 +438,7 @@ h2 {
 
 .category-selection {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 90%;
   margin: auto;
@@ -441,6 +453,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .hot {
   background: #00a651;
 }
@@ -475,7 +488,6 @@ h2 {
   margin-bottom: 10px;
 }
 
- 
 .booking-steps .container p {
   font-size: 24px;
   color: black;
@@ -485,7 +497,7 @@ h2 {
 }
 
 .booking-img img {
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 
@@ -498,7 +510,7 @@ h2 {
   padding: 30px 0;
 }
 
-h2 {  
+h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 54.47px;
@@ -516,16 +528,14 @@ h2 {
 /* testimonia ends  */
 
 /* subcribe start*/
-
 .subscribe {
-
   margin-top: 70px;
 }
 
 .subscribe .container {
   margin-top: 30px;
   background-color: #32df8f;
- margin: auto;
+  margin: auto;
   border-top-left-radius: 140px;
   position: relative;
   width: 60%;
@@ -589,12 +599,10 @@ h2 {
 
 /* footer  */
 
-
 .footer {
   padding: 40px 20px;
   margin-top: 30px;
 }
-
 
 .footer .container {
   display: flex;
@@ -602,14 +610,14 @@ h2 {
   justify-content: space-around;
 }
 
-
 .footer-row {
   margin-bottom: 20px;
   text-align: left;
   min-width: 100px;
 }
 
-.footer-row h2, .footer-row h3 {
+.footer-row h2,
+.footer-row h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -671,12 +679,123 @@ h2 {
   width: 100px;
 }
 
+.footer {
+  padding: 40px 20px;
+  margin-top: 30px;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer-row {
+  margin-bottom: 20px;
+  text-align: left;
+  min-width: 180px;
+  flex: 1 1 20%;
+}
+
+.footer-row h2, .footer-row h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer-row ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-row ul li {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  text-align: center;
+  flex: 1 1 100%; 
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.app-stores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.app-box {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-box img {
+  width: 100px;
+}
+
 
 
 
 /* footer ends */
 
 @media (max-width: 768px) {
+  .header-main {
+    height: 70vh;
+  }
+
+  .navbar .menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
   .services-cards {
     flex-direction: column;
     align-items: center;
@@ -697,32 +816,246 @@ h2 {
   .destination-cards {
     width: 100%;
   }
-  .subscribe {
+
+  .experience-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .experience-card {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .experience-section h2 {
+    font-size: 28px;
+  }
+
+  .experience-section p {
+    font-size: 12px;
+    max-width: 90%;
+  }
+
+  .packages-section h2 {
+    font-size: 28px;
+  }
+
+  .hot-deal-cards {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .hot-deal-card {
+    width: 100%;
+  }
+
+  .category {
+    padding: 8px 12px;
+  }
+
+  .location span {
+    font-size: 16px;
+  }
+
+  .booking-steps .container h2,
+  .testimonials h2 {
+    font-size: 30px;
+  }
+
+  .subscribe .container {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .subscribe .container p {
+    font-size: 16px;
     width: 90%;
-    padding: 20px;
   }
 
   .subscribe-form {
     flex-direction: column;
+    gap: 15px;
   }
 
-  .subscribe-form input,
+  .subscribe-form input {
+    width: 100%;
+    padding: 12px;
+  }
+
   .subscribe-form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .top-right-image {
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    right: -10px;
+  }
+
+  @media (max-width: 768px) {
+    .footer .container {
+      justify-content: center;
+    }
+  
+    .footer-row {
+      flex: 1 1 45%; 
+      text-align: center;
+    }
+  
+    .footer-row h2, .footer-row h3 {
+      font-size: 18px; 
+    }
+  
+    .footer-row ul li {
+      font-size: 14px; 
+    }
+  
+    .social-icons {
+      gap: 10px;
+    }
+  
+    .app-box img {
+      width: 90px; 
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: none !important;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .navbar .icons span img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .experience-section {
+    padding: 10px;
+  }
+
+  .experience-cards {
+    gap: 20px;
+  }
+
+  .experience-card {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .experience-section h2 {
+    font-size: 22px;
+  }
+
+  .experience-section p {
+    font-size: 10px;
+    max-width: 100%;
+  }
+
+  .experience-background {
+    padding: 10px;
+  }
+
+  .packages-section {
+    padding: 20px;
+  }
+
+  .packages-section h2 {
+    font-size: 24px;
+  }
+
+  .hot-deal-cards {
+    gap: 20px;
+  }
+
+  .category {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .location span {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+
+  .subscribe .container {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .subscribe .container p {
+    font-size: 14px;
     width: 100%;
   }
 
-  .footer-row {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .footer-row ul {
-    display: block;
-  }
-
-  .social-media {
+  .subscribe-form {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
   }
+
+  .subscribe-form input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .subscribe-form button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .top-right-image {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    right: -5px;
+  }
+
+    .footer .container {
+      flex-direction: column; 
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .footer-row {
+      flex: 1 1 100%; 
+      text-align: center;
+    }
+  
+    .footer-row h2, .footer-row h3 {
+      font-size: 16px;
+    }
+  
+    .footer-row ul li {
+      font-size: 14px; 
+    }
+  
+    .social-icons {
+      gap: 10px;
+      margin-bottom: 15px; 
+    }
+  
+    .app-box img {
+      width: 80px; 
+    }
+  
+  
 }
