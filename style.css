@@ -1,29 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  body, html {
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
-  .header-main {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('./images/stefan-stefancik-6whwCHgsMiA-unsplash 1.png') ;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-  }
-  
-  /* .header-secondary {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.header-main {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/stefan-stefancik-6whwCHgsMiA-unsplash 1.png");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* .header-secondary {
     height: 10vh;
     background: url('./images/Rectangle 3 (1).png') ;
     position: absolute;
@@ -33,226 +34,220 @@
     top: 0;
     left: 0;
   } */
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar .logo {
-    font-family: 'Laila', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  .navbar .menu {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar .menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .navbar .icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar .icons span img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .content h1 {
-    font-size: 75px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .content p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    max-width: 600px;
-    margin-bottom: 40px;
-  }
-  
-  .button {
-    background-color: #00a651;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-  }
 
-  .services-section {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .services-section h2 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 40px;
-  }
-  
-  .services-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    
-  }
-  .services-cards .white-background{
-    background-color: white;
-  }
-  
-  .service-card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    height: 200px;
-    text-align: start;
-    transition: transform 0.3s ease;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .service-card img {
-    width: 50px;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .service-card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 32.68px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .service-card p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21.79px;
-    text-align: left;
-    color: #555;
-  }
-
-
-  .experience-section {
-    height: 700px;
-    background-color: #0058530D;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.experience-background{
-    background: url('./images/world_map_PNG28\ 1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 80%;
-    height: 80%;
+.navbar .logo {
+  font-family: "Laila", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .icons span img {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 75px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: #00a651;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.services-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.services-section h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.services-cards .white-background {
+  background-color: white;
+}
+
+.service-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 200px;
+  text-align: start;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 50px;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32.68px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+  color: #555;
+}
+
+.experience-section {
+  height: 700px;
+  background-color: #0058530d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.experience-background {
+  background: url("./images/world_map_PNG28\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height: 80%;
 }
 
 .experience-content {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 .experience-section h2 {
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 54.47px;
-    margin-bottom: 10px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54.47px;
+  margin-bottom: 10px;
 }
 
 .experience-section p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21.79px;
-    max-width: 600px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.79px;
+  max-width: 600px;
 }
 
 .experience-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 90px;
 }
 
 .experience-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px; 
-    text-align: center;
-    padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  padding: 20px;
 }
 
-.experience-card img{
-    width: 30px;
-    height: 30px;
+.experience-card img {
+  width: 30px;
+  height: 30px;
 }
 
 .experience-card h3 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 49.03px;
-    margin: 5px 0 0 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 49.03px;
+  margin: 5px 0 0 0;
 }
 
 .experience-card p {
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 27.24px;
-    margin: 5px 0 0 0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27.24px;
+  margin: 5px 0 0 0;
 }
 
-
 /* POPULAR SECTION */
-
 
 .destination {
   padding: 20px;
   background-color: #ffffff;
 }
 
-.popular{
+.popular {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -260,7 +255,7 @@
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 54.47px;
@@ -308,7 +303,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   padding: 10px;
   text-align: left;
   flex-grow: 1;
@@ -330,92 +325,86 @@ h2 {
   height: 33px;
 }
 
-
-
-
-
 /* POPULAr SECTION ENDS */
 
-
 .packages-section {
-    padding: 40px 20px;
-    text-align: center;
-    background: #ECF1F0;
-    min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  background: #ecf1f0;
+  min-height: 100vh;
 }
 
 .packages-section h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .hot-deals {
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .hot-deals h3 {
-    color: white;
-    margin-bottom: 20px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .hot-deal-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .hot-deal-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 30%;
-    max-height: 370px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 30%;
+  max-height: 370px;
 }
 
 .hot-deal-card img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
 
 .package-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .package-info span {
-    font-weight: 400;
-    font-size: 20px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .hot-deal-card p {
-    padding: 0 10px;
-    text-align: left;
-    font-size: 16px;
+  padding: 0 10px;
+  text-align: left;
+  font-size: 16px;
+  color: black;
 }
 
 .location {
   padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .location a {
   text-decoration: underline;
   color: black;
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .location img {
-    margin-right: 5px;
-    
+  margin-right: 5px;
 }
 .location span {
   font-weight: 600;
@@ -423,45 +412,43 @@ h2 {
 }
 
 .button {
-    background: #00A651;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
+  background: #00a651;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
 }
 
-.packages-section .container{
-    width: 90%;
-    margin: auto;
+.packages-section .container {
+  width: 90%;
+  margin: auto;
 }
 
 .category-selection {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-    gap: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .category {
-    background: #666666;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+  background: #666666;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.hot{
-    background: #00A651;
+.hot {
+  background: #00a651;
 }
 
-
-.location img{
+.location img {
   width: 20px;
   height: 20px;
 }
-
 
 /* booking steps start */
 
@@ -471,7 +458,7 @@ h2 {
   text-align: center;
 }
 
-.container {
+.booking-steps .container {
   max-width: 90%;
   margin: 0 auto;
   display: flex;
@@ -480,89 +467,147 @@ h2 {
   justify-content: space-around;
 }
 
-h2 {
+.booking-steps .container h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 54.47px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   margin-bottom: 10px;
 }
 
-p {
-  
+ 
+.booking-steps .container p {
   font-size: 24px;
+  color: black;
   font-weight: 400;
   line-height: 32.68px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
-.image-container img {
-  width: 80%;
+.booking-img img {
+  width: 70%;
+  margin: auto;
 }
-
 
 /* booking steps ends */
-
-
 
 /* testimonials  */
 
 .testimonials {
-  background: #ECF1F0;
-padding: 30px 0;
+  background: #ecf1f0;
+  padding: 30px 0;
 }
 
-
-
-h2 {
-  font-family: 'Open Sans', sans-serif;
+h2 {  
   font-size: 40px;
   font-weight: 700;
   line-height: 54.47px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  margin-bottom: 40px;
 }
 
 .image-container img {
   width: 100%;
+  margin: auto;
   height: auto;
   display: block;
   border-radius: 8px;
 }
 
-
 /* testimonia ends  */
 
+/* subcribe start*/
 
-  
-  @media (max-width: 768px) {
-    .services-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .service-card {
-      width: 90%;
-    }
+.subscribe {
+}
 
-    .popular{
-     flex-direction: column;
-    }
+.subscribe .container {
+  margin-top: 30px;
+  background-color: #32df8f;
+  padding: 40px 20px;
+  border-top-left-radius: 40%;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
 
-    .destination-image{
-      width: 100%;
-    }
+.subscribe .container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 20px;
+}
 
-    .destination-cards{
-      width: 100%;
-    }
- 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: #32df8f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.top-right-image {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+}
+
+/* subscribe ends  */
+
+@media (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
   }
-  
- 
+
+  .service-card {
+    width: 90%;
+  }
+
+  .popular {
+    flex-direction: column;
+  }
+
+  .destination-image {
+    width: 100%;
+  }
+
+  .destination-cards {
+    width: 100%;
+  }
+  .subscribe {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+  }
+}
