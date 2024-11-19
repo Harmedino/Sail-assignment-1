@@ -518,15 +518,22 @@ h2 {
 /* subcribe start*/
 
 .subscribe {
+
+  margin-top: 70px;
 }
 
 .subscribe .container {
   margin-top: 30px;
   background-color: #32df8f;
-  padding: 40px 20px;
+ margin: auto;
   border-top-left-radius: 40%;
   position: relative;
-  width: 70%;
+  width: 60%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   text-align: center;
 }
